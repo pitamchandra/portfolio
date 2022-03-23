@@ -147,6 +147,47 @@ img {
     common css end
 ======================= */
 
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #094b77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.preloader .round {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(#094b77, #094b77) padding-box,
+    linear-gradient(to top,  #5bc5f4, #000) border-box;
+    border-width: 7px;
+    border-radius: 50%;
+    border-style: solid;
+    border-right-color: #999;
+    border-color: transparent;
+    border-right-color: #000;
+    animation: round 1s linear infinite;
+}
+
+@keyframes round {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* =====================
+    preloader css end
+======================= */
+
 .menu_part {
     width: 100%;
     padding: 0px 0;
@@ -158,7 +199,7 @@ img {
 
 .menu_fixed {
     position: fixed;
-    background: var(--bg-black);
+    background: var(--bg-dark);
     top: 0;
     border-bottom: 2px solid var(--brand);
     padding: 5px 0;
@@ -943,7 +984,7 @@ img {
     }
 
     60% {
-        transform: translatey(-20px);
+        transform: translatey(-10px);
     }
 
     100% {
@@ -957,19 +998,11 @@ img {
 
 @keyframes back_btn {
     0% {
-        transform: translatey(50px);
-    }
-
-    10% {
-        transform: translatey(40px);
-    }
-
-    90% {
-        transform: translatey(-40px);
+        transform: translatey(23px);
     }
 
     100% {
-        transform: translatey(-50px);
+        transform: translatey(-40px);
     }
 }
 

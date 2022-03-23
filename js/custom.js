@@ -2,7 +2,7 @@
 //scrolling function add
 $(window).scroll(function(){
   //for menu fixed
-  if($(window).scrollTop() > 100 ) {
+  if($(window).scrollTop() > 50 ) {
     $(".menu_part").addClass('menu_fixed')
   }else{
     $(".menu_part").removeClass('menu_fixed')
@@ -59,5 +59,39 @@ $('.testi_slider').slick({
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
-  
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows:false,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
+
+//animation wow js
+new WOW().init();
