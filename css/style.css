@@ -149,39 +149,140 @@ img {
 
 
 .preloader {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #094b77;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
+	width: 100%;
+	height: 100vh;
+	background: var(--bg-dark);
+	z-index: 99999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
 }
-
-.preloader .round {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(#094b77, #094b77) padding-box,
-    linear-gradient(to top,  #5bc5f4, #000) border-box;
-    border-width: 7px;
+.preloader .pre_round{
+    width: 10px;
+    height: 10px;
+    background: var(--brand);
     border-radius: 50%;
-    border-style: solid;
-    border-right-color: #999;
-    border-color: transparent;
-    border-right-color: #000;
-    animation: round 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
 }
-
-@keyframes round {
-    0% {
-        transform: rotate(0deg);
+.round_1{
+    left: 0;
+    animation: round_1 2s ease-out infinite;
+    animation-delay: .6s;
+}
+.round_2{
+    left: 5px;
+    animation: round_2 2s ease-out infinite;
+    animation-delay: .4s;
+}
+.round_3{
+    left: 10px;
+    animation: round_3 2s ease-out infinite;
+    animation-delay: .3s;
+}
+.round_4{
+    
+    left: 15px;
+    animation: round_4 2s ease-out infinite;
+    animation-delay: .2s;
+}
+@keyframes round_1 {
+    0%{
+        left: 0;
+        opacity: 0;
     }
-
-    100% {
-        transform: rotate(360deg);
+    10%{
+        opacity: 1;
+    }
+    40%{
+        left: 46%;
+        opacity: 1;
+    }
+    60%{
+        left: 46%;
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+    }
+}
+@keyframes round_2 {
+    0%{
+        left: 0;
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    30%{
+        left: 48%;
+        opacity: 1;
+    }
+    70%{
+        left: 48%;
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+    }
+}
+@keyframes round_3 {
+    0%{
+        left: 0;
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    30%{
+        left: 50%;
+        opacity: 1;
+    }
+    70%{
+        left: 50%;
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+    }
+}
+@keyframes round_4 {
+    0%{
+        left: 0;
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    30%{
+        left: 52%;
+        opacity: 1;
+    }
+    70%{
+        left: 52%;
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
     }
 }
 /* =====================

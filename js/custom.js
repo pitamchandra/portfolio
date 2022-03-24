@@ -16,6 +16,9 @@ $(window).scroll(function(){
   }
 })
 
+//fade out preeloader
+$(".preloader").delay(2000).fadeOut();
+
 //go to top 
 
 $(".back_to_top").click(function(){

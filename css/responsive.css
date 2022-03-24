@@ -33,6 +33,61 @@
 
     /* ============ common part end ============= */
 
+    /* preloader */
+   
+    @keyframes round_1 {
+        40%{
+            left: 42%;
+            opacity: 1;
+        }
+        60%{
+            left: 42%;
+            opacity: 1;
+        }
+        100%{
+            left: 100%;
+        }
+    }
+    @keyframes round_2 {
+        40%{
+            left: 47%;
+            opacity: 1;
+        }
+        60%{
+            left: 47%;
+            opacity: 1;
+        }
+        100%{
+            left: 100%;
+        }
+    }
+    @keyframes round_3 {
+        40%{
+            left: 52%;
+            opacity: 1;
+        }
+        60%{
+            left: 52%;
+            opacity: 1;
+        }
+        100%{
+            left: 100%;
+        }
+    }
+    @keyframes round_4 {
+        40%{
+            left: 57%;
+            opacity: 1;
+        }
+        60%{
+            left: 57%;
+            opacity: 1;
+        }
+        100%{
+            left: 100%;
+        }
+    }
+
     /* ============ menu part start ============= */
     .menu_part .navbar-brand img {
         height: 60px;
