@@ -163,9 +163,7 @@
         text-align: center;
     }
 
-    #feature_part .item {
-        background: #383f48;
-    }
+
 
     #feature_part .item .feature_icon {
         font-size: 35px;
@@ -197,11 +195,6 @@
     #resume_part {
         padding-top: 50px;
         text-align: center;
-    }
-
-    #resume_part .item {
-        padding: 20px;
-        background: #383f48;
     }
 
     #resume_part h4 {
@@ -248,13 +241,13 @@
 
     #testi_part .client {
         padding: 15px 15px;
-        background: #383f48;
+        background: #7f8fa4;
         border-radius: 10px 10px 0 0;
     }
 
     #testi_part .details {
         padding: 15px 15px;
-        background: #383f48;
+        background: #7f8fa4;
         border-radius: 0 0 10px 10px;
         box-shadow: none;
     }

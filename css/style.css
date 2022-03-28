@@ -8,7 +8,7 @@
     --switcher: #c6d2da;
 
     --ff1: 'Poppins', sans-serif;
-    --ff2: 'Smooch Sans', sans-serif;
+    --ff2: 'Poppins', sans-serif;
 }
 
 .white_theme {
@@ -48,19 +48,8 @@ img {
     padding: 80px 0;
 }
 
-/* .shape_btm {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: var(--brand);
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    border-bottom: 2px solid #000;
-} */
-
 .subtitle {
-    font-size: 20px;
+    font-size: 18px;
     font-family: var(--ff2);
     font-weight: 400;
     color: var(--brand) !important;
@@ -158,24 +147,47 @@ img {
     common css end
 ======================= */
 
-.color_switcher{
+.color_switcher {
     width: 50px;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    background: var(--switcher);
+    background: var(--bg-brand);
     position: fixed;
     top: 30%;
     right: 0%;
-    border-radius: 100% 0% 61% 39% / 26% 100% 0% 74% ;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -1px 1px 5px 2px rgb(82, 82, 82);
     color: var(--brand);
     cursor: pointer;
-    z-index: 999;
+    z-index: 99999;
     transition: all linear .4s;
 }
 
-.color_switcher:hover{
+.color_switcher:hover {
     width: 60px;
+    background: var(--switcher);
+}
+
+.color_switcher i {
+    animation: switcher 3s infinite;
+}
+
+@keyframes switcher {
+    0% {
+        transform: scale(1.2) rotate(0deg);
+        color: var(--brand);
+    }
+
+    50% {
+        transform: scale(1.5) rotate(400deg);
+        color: #284674;
+    }
+
+    100% {
+        transform: scale(1.2) rotate(0deg);
+        color: var(--brand);
+    }
 }
 
 .preloader {
@@ -463,12 +475,13 @@ img {
     position: relative;
 }
 
-#banner_part .banner_divider{
+#banner_part .banner_divider {
     width: 100%;
     height: 1px;
-    background-color: #92a1aa;
+    background-color: var(--bg-black);
     margin-top: 50px;
 }
+
 #banner_part .banner_content h1 {
     font-size: 50px;
     font-weight: 700;
@@ -506,20 +519,22 @@ img {
     overflow: hidden;
     border-radius: 10px 10px 0 0;
     position: relative;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     animation: image 4s infinite;
 }
 
 @keyframes image {
-    0%{
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
-    50%{
-        border-radius: 68% 32% 32% 68% / 42% 30% 70% 58%  ;
+
+    50% {
+        border-radius: 68% 32% 32% 68% / 42% 30% 70% 58%;
         background: linear-gradient(var(--brand), var(--bg-dark));
     }
-    100%{
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
 }
 
@@ -539,9 +554,9 @@ img {
 
 #feature_part .item {
     background: linear-gradient(320deg, var(--bg-dark), var(--bg-black));
-    box-shadow: -3px -3px 9px 1px rgba(51,51,51,0.75);
--webkit-box-shadow: -3px -3px 9px 1px rgba(51,51,51,0.75);
--moz-box-shadow: -3px -3px 9px 1px rgba(51,51,51,0.75);
+    box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
+    -webkit-box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
+    -moz-box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
@@ -550,9 +565,9 @@ img {
 
 #feature_part .item:hover {
     background: linear-gradient(320deg, var(--bg-black), var(--bg-dark));
-    box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
--webkit-box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
--moz-box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
+    box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
+    -webkit-box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
+    -moz-box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
 }
 
 #feature_part .item .common_h3 {
@@ -731,9 +746,9 @@ img {
 
 #portfolio_part .item .port_overlay a:hover {
     background: var(--bg-dark);
-    box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
--webkit-box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
--moz-box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
+    box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
+    -webkit-box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
+    -moz-box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
     color: var(--headingClr);
     border-radius: 5px;
 }
@@ -914,9 +929,11 @@ img {
     width: 100%;
     transition: all linear .4s;
 }
-#leatest_part .item:hover img{
+
+#leatest_part .item:hover img {
     transform: scale(1.1);
 }
+
 #leatest_part .item .leatest_over {
     position: absolute;
     top: 0;
@@ -965,18 +982,18 @@ img {
 #contact_part .item {
     padding: 30px 20px;
     background: var(--bg-dark);
-    box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
--webkit-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
--moz-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+    box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
     border-radius: 10px;
 }
 
 #contact_part .item .image {
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
-    -webkit-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
-    -moz-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+    box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
 }
 
 #contact_part .item .image img {
@@ -1005,9 +1022,9 @@ img {
 #contact_part .main_form {
     padding: 30px 20px;
     background: var(--bg-dark);
-    box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
--webkit-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
--moz-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+    box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
     border-radius: 10px;
 }
 
@@ -1053,14 +1070,14 @@ img {
     color: var(--headingClr);
     border: 1px solid var(--brand);
     border-radius: 5px;
-    box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
-    -webkit-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
-    -moz-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+    box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(43, 43, 43, 0.75);
     position: relative;
     z-index: 1;
 }
 
-#contact_part .main_form button span{
+#contact_part .main_form button span {
     position: absolute;
     top: 0;
     left: 0;
@@ -1070,7 +1087,8 @@ img {
     z-index: -1;
     transition: all linear .4s;
 }
-#contact_part .main_form button:hover span{
+
+#contact_part .main_form button:hover span {
     width: 100%;
 }
 
@@ -1146,7 +1164,7 @@ img {
     }
 }
 
-.back_to_top span{
+.back_to_top span {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1156,7 +1174,8 @@ img {
     transition: all linear .4s;
     z-index: -1;
 }
-.back_to_top:hover span{
+
+.back_to_top:hover span {
     height: 100%;
 }
 
@@ -1164,7 +1183,8 @@ img {
     animation: back_btn 1.5s infinite;
     transition: all linear .4s;
 }
-.back_to_top:hover i{
+
+.back_to_top:hover i {
     color: #fff;
 }
 
