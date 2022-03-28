@@ -2,11 +2,22 @@
     --brand: #e54848;
     --headingClr: #C4CFDE;
     --peraClr: #dddae4;
+    --peraClr-2: #b9b9b9;
     --bg-dark: #292d33;
     --bg-black: #252525;
+    --switcher: #c6d2da;
 
     --ff1: 'Poppins', sans-serif;
     --ff2: 'Smooch Sans', sans-serif;
+}
+
+.white_theme {
+    --headingClr: #040505;
+    --peraClr: #313131;
+    --bg-dark: #c6d2da;
+    --bg-black: #e6e6e6;
+    --peraClr-2: #313131;
+    --switcher: #292D33;
 }
 
 * {
@@ -37,7 +48,7 @@ img {
     padding: 80px 0;
 }
 
-.shape_btm {
+/* .shape_btm {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -46,7 +57,7 @@ img {
     background: var(--brand);
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     border-bottom: 2px solid #000;
-}
+} */
 
 .subtitle {
     font-size: 20px;
@@ -147,19 +158,39 @@ img {
     common css end
 ======================= */
 
+.color_switcher{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: var(--switcher);
+    position: fixed;
+    top: 30%;
+    right: 0%;
+    border-radius: 100% 0% 61% 39% / 26% 100% 0% 74% ;
+    color: var(--brand);
+    cursor: pointer;
+    z-index: 999;
+    transition: all linear .4s;
+}
+
+.color_switcher:hover{
+    width: 60px;
+}
 
 .preloader {
-	width: 100%;
-	height: 100vh;
-	background: var(--bg-dark);
-	z-index: 99999;
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-dark);
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
 }
-.preloader .pre_round{
+
+.preloader .pre_round {
     width: 10px;
     height: 10px;
     background: var(--brand);
@@ -168,126 +199,157 @@ img {
     top: 50%;
     opacity: 0;
 }
-.round_1{
+
+.round_1 {
     left: 0;
     animation: round_1 2s ease-out infinite;
     animation-delay: .6s;
 }
-.round_2{
+
+.round_2 {
     left: 5px;
     animation: round_2 2s ease-out infinite;
     animation-delay: .4s;
 }
-.round_3{
+
+.round_3 {
     left: 10px;
     animation: round_3 2s ease-out infinite;
     animation-delay: .3s;
 }
-.round_4{
-    
+
+.round_4 {
+
     left: 15px;
     animation: round_4 2s ease-out infinite;
     animation-delay: .2s;
 }
+
 @keyframes round_1 {
-    0%{
+    0% {
         left: 0;
         opacity: 0;
     }
-    10%{
+
+    10% {
         opacity: 1;
     }
-    40%{
+
+    40% {
         left: 46%;
         opacity: 1;
     }
-    60%{
+
+    60% {
         left: 46%;
         opacity: 1;
     }
-    90%{
+
+    90% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         left: 100%;
         opacity: 0;
     }
 }
+
 @keyframes round_2 {
-    0%{
+    0% {
         left: 0;
         opacity: 0;
     }
-    10%{
+
+    10% {
         opacity: 1;
     }
-    30%{
+
+    30% {
         left: 48%;
         opacity: 1;
     }
-    70%{
+
+    70% {
         left: 48%;
         opacity: 1;
     }
-    90%{
+
+    90% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         left: 100%;
         opacity: 0;
     }
 }
+
 @keyframes round_3 {
-    0%{
+    0% {
         left: 0;
         opacity: 0;
     }
-    10%{
+
+    10% {
         opacity: 1;
     }
-    30%{
+
+    30% {
         left: 50%;
         opacity: 1;
     }
-    70%{
+
+    70% {
         left: 50%;
         opacity: 1;
     }
-    90%{
+
+    90% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         left: 100%;
         opacity: 0;
     }
 }
+
 @keyframes round_4 {
-    0%{
+    0% {
         left: 0;
         opacity: 0;
     }
-    10%{
+
+    10% {
         opacity: 1;
     }
-    30%{
+
+    30% {
         left: 52%;
         opacity: 1;
     }
-    70%{
+
+    70% {
         left: 52%;
         opacity: 1;
     }
-    90%{
+
+    90% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         left: 100%;
         opacity: 0;
     }
 }
+
 /* =====================
     preloader css end
 ======================= */
+
+
 
 .menu_part {
     width: 100%;
@@ -396,12 +458,17 @@ img {
 ======================= */
 
 #banner_part {
-    background: linear-gradient(var(--bg-dark), var(--bg-black));
+    background: linear-gradient(var(--bg-dark), var(--bg-dark));
     padding-top: 200px;
-    padding-bottom: 50px;
     position: relative;
 }
 
+#banner_part .banner_divider{
+    width: 100%;
+    height: 1px;
+    background-color: #92a1aa;
+    margin-top: 50px;
+}
 #banner_part .banner_content h1 {
     font-size: 50px;
     font-weight: 700;
@@ -411,6 +478,7 @@ img {
 #banner_part .banner_content h1 span {
     color: var(--brand);
 }
+
 
 #banner_part .banner_content .typing {
     font-size: 40px;
@@ -432,78 +500,29 @@ img {
 
 
 #banner_part .image {
-    width: 90%;
-    background: linear-gradient(var(--bg-black), var(--bg-dark));
+    width: 100%;
+    background: linear-gradient(var(--brand), var(--bg-dark));
     box-shadow: -30px -20px 100px 0px #504f5b42;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
     position: relative;
-    animation: banner_box 3s infinite;
-}
-
-/* @keyframes banner_box {
-    0%{
-        box-shadow: -30px -20px 100px 0px #504f5b42;
-    }
-    50%{
-        box-shadow: -30px -20px 100px 0px #000;
-    }
-    100%{
-        box-shadow: -30px -20px 50px 0px var(#504f5b42);
-    }
-} */
-
-#banner_part .image::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    width: 0;
-    height: 5px;
-    background: var(--black);
-    animation: image 2s infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    animation: image 4s infinite;
 }
 
 @keyframes image {
-    0% {
-        width: 0px;
+    0%{
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
     }
-
-    50% {
-        width: 200px;
-        background: var(--brand);
+    50%{
+        border-radius: 68% 32% 32% 68% / 42% 30% 70% 58%  ;
+        background: linear-gradient(var(--brand), var(--bg-dark));
     }
-
-    100% {
-        width: 0px;
+    100%{
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
     }
 }
 
-#banner_part .image::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    width: 0;
-    height: 5px;
-    background: var(--black);
-    animation: image_2 2s infinite;
-}
-
-@keyframes image_2 {
-    0% {
-        width: 0px;
-    }
-
-    70% {
-        width: 200px;
-        background: var(--brand);
-    }
-
-    100% {
-        width: 0px;
-    }
-}
 
 #banner_part .image img {
     width: 100%;
@@ -520,7 +539,9 @@ img {
 
 #feature_part .item {
     background: linear-gradient(320deg, var(--bg-dark), var(--bg-black));
-    box-shadow: -3px -3px 10px 1px #2e3540;
+    box-shadow: -3px -3px 9px 1px rgba(51,51,51,0.75);
+-webkit-box-shadow: -3px -3px 9px 1px rgba(51,51,51,0.75);
+-moz-box-shadow: -3px -3px 9px 1px rgba(51,51,51,0.75);
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
@@ -529,7 +550,9 @@ img {
 
 #feature_part .item:hover {
     background: linear-gradient(320deg, var(--bg-black), var(--bg-dark));
-    box-shadow: none;
+    box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
+-webkit-box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
+-moz-box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
 }
 
 #feature_part .item .common_h3 {
@@ -590,7 +613,9 @@ img {
 #resume_part .item {
     padding: 20px;
     background: linear-gradient(320deg, var(--bg-dark), var(--bg-black));
-    box-shadow: -1px -2px 15px 3px var(--bg-dark);
+    box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
+    -webkit-box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
+    -moz-box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
     border-radius: 5px;
     margin: 20px 0;
     transition: all linear .4s;
@@ -598,7 +623,9 @@ img {
 
 #resume_part .item:hover {
     background: linear-gradient(320deg, var(--bg-black), var(--bg-dark));
-    box-shadow: none;
+    box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
+    -webkit-box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
+    -moz-box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
     transform: translatey(-10px);
 }
 
@@ -669,18 +696,18 @@ img {
 }
 
 #portfolio_part .item .port_overlay {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #e548488a;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	transform: scale(0);
-	transition: all linear .4s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d82f2fbd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all linear .4s;
 }
 
 #portfolio_part .item:hover .port_overlay {
@@ -688,29 +715,32 @@ img {
 }
 
 #portfolio_part .item .port_overlay .common_h3 {
-	color: var(--headingClr);
-	transition: all linear .4s;
+    font-size: 18px;
+    color: var(--bg-black);
+    transition: all linear .4s;
 }
 
 #portfolio_part .item .port_overlay a {
-	font-size: 18px;
-	font-weight: 500;
-	color: var(--headingClr);
-	padding: 6px 20px;
-	text-transform: capitalize;
-	transition: all linear .4s;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bg-black);
+    padding: 4px 12px;
+    text-transform: capitalize;
+    transition: all linear .4s;
 }
 
 #portfolio_part .item .port_overlay a:hover {
     background: var(--bg-dark);
-    box-shadow: 0px 1px 4px 0px var(--bg-black);
+    box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
+-webkit-box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
+-moz-box-shadow: 3px 3px 9px 1px rgba(51,51,51,0.75);
     color: var(--headingClr);
     border-radius: 5px;
 }
 
 
 #portfolio_part .item .port_overlay .common_h3:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* =====================
@@ -875,7 +905,6 @@ img {
 }
 
 #leatest_part .item {
-    box-shadow: 2px 2px 10px 3px #3a3f43;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -883,8 +912,11 @@ img {
 
 #leatest_part .item img {
     width: 100%;
+    transition: all linear .4s;
 }
-
+#leatest_part .item:hover img{
+    transform: scale(1.1);
+}
 #leatest_part .item .leatest_over {
     position: absolute;
     top: 0;
@@ -915,8 +947,8 @@ img {
     transition: all linear .4s;
 }
 
-#leatest_part .item .leatest_over:hover a {
-    color: var(--peraClr);
+#leatest_part .item .leatest_over a:hover {
+    color: #fff;
     background: var(--brand);
 }
 
@@ -933,13 +965,18 @@ img {
 #contact_part .item {
     padding: 30px 20px;
     background: var(--bg-dark);
-    box-shadow: -1px -1px 10px 0px var(--bg-black);
+    box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+-webkit-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+-moz-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
     border-radius: 10px;
 }
 
 #contact_part .item .image {
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
 }
 
 #contact_part .item .image img {
@@ -956,21 +993,21 @@ img {
 }
 
 #contact_part .item .common-pera {
-    color: #b9b9b9;
+    color: var(--peraClr-2)
 }
 
 #contact_part .item .common-pera a {
     color: var(--brand);
 }
 
-#contact_part .item .find_me a {
-    box-shadow: 1px 1px 6px 1px var(--bg-black);
-}
+
 
 #contact_part .main_form {
     padding: 30px 20px;
     background: var(--bg-dark);
-    box-shadow: -1px -1px 10px 0px var(--bg-black);
+    box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+-webkit-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+-moz-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
     border-radius: 10px;
 }
 
@@ -1012,18 +1049,32 @@ img {
     text-align: center;
     font-size: 18px;
     text-transform: capitalize;
+    background: transparent;
     color: var(--headingClr);
-    background: linear-gradient(45deg, var(--bg-dark), var(--bg-black));
-    border: 0;
-    box-shadow: 0px 0px 5px 0px var(--bg-black);
-    transition: all linear .4s;
+    border: 1px solid var(--brand);
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(43,43,43,0.75);
+    position: relative;
+    z-index: 1;
 }
 
-#contact_part .main_form button:hover {
-    background: linear-gradient(45deg, var(--bg-black), var(--bg-dark));
-    color: var(--brand);
-    padding: 12px;
+#contact_part .main_form button span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--brand);
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: all linear .4s;
 }
+#contact_part .main_form button:hover span{
+    width: 100%;
+}
+
+
 
 /* =====================
     contact part css end
@@ -1077,6 +1128,7 @@ img {
     cursor: pointer;
     display: none;
     overflow: hidden;
+    z-index: 1;
     animation: main_back_btn 1.5s infinite;
 }
 
@@ -1094,8 +1146,26 @@ img {
     }
 }
 
+.back_to_top span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--brand);
+    transition: all linear .4s;
+    z-index: -1;
+}
+.back_to_top:hover span{
+    height: 100%;
+}
+
 .back_to_top i {
     animation: back_btn 1.5s infinite;
+    transition: all linear .4s;
+}
+.back_to_top:hover i{
+    color: #fff;
 }
 
 @keyframes back_btn {

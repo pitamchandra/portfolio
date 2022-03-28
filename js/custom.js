@@ -1,4 +1,9 @@
 
+//color switcher
+$('.color_switcher').click(function(){
+  $('.scrollspy-example').toggleClass('white_theme');
+})
+
 //scrolling function add
 $(window).scroll(function(){
   //for menu fixed
