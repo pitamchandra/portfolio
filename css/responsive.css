@@ -297,12 +297,12 @@
     }
 
     #contact_part .item {
-        background: #383f48;
-    }
+        background: #7f8fa4;
+      }
 
     #contact_part .main_form {
         padding: 20px;
-        background: #383f48;
+        background: #7f8fa4;
         margin-top: 20px;
     }
 
@@ -437,7 +437,7 @@
     }
 
     #feature_part .item {
-        background: #383f48;
+        background: linear-gradient(320deg, var(--bg-dark), var(--bg-black));
     }
 
     #feature_part .item .feature_icon {
@@ -474,7 +474,7 @@
 
     #resume_part .item {
         padding: 20px;
-        background: #383f48;
+        background: linear-gradient(320deg, var(--bg-dark), var(--bg-black));
     }
 
     #resume_part h4 {
@@ -521,13 +521,13 @@
 
     #testi_part .client {
         padding: 15px 15px;
-        background: #383f48;
+        background: #7f8fa4;
         border-radius: 10px 10px 0 0;
     }
 
     #testi_part .details {
         padding: 15px 15px;
-        background: #383f48;
+        background: #7f8fa4;
         border-radius: 0 0 10px 10px;
         box-shadow: none;
     }
@@ -570,12 +570,12 @@
     }
 
     #contact_part .item {
-        background: #383f48;
+        background: #7f8fa4;
     }
 
     #contact_part .main_form {
         padding: 20px;
-        background: #383f48;
+        background: #7f8fa4;
         margin-top: 20px;
     }
 
