@@ -223,12 +223,14 @@
 
     #portfolio_part .item .port_overlay {
         transform: scale(1);
+        background-color: #d82f2f80;
     }
 
     #portfolio_part .item .port_overlay a {
         background: #16191e;
         box-shadow: 0px 1px 4px 0px #959595;
         font-size: 16px;
+        color: var(--brand);
     }
 
     /* ============ portfoio part end ============= */
