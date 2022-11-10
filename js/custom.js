@@ -106,7 +106,7 @@ $('.testi_slider').slick({
 new WOW().init();
 
 // play details 
-let utterance = new SpeechSynthesisUtterance("Hello, I am Pitam Chandra, I am a Professional Front-end Developer & WordPress Expert. I have 4 years plus of professional experience in Website Designing. I've gotten pretty professional skills at it. I'm an Expert, convert Psd, Xd, Figma Design to Html Css, Bootstrap, Responsive, WordPress Websites. Feel free to ask me, If you are facing, any issues related, to website creation. I can reassure you, of The Best Ever Output, & handred % Quality Work-Based Out, on My Professional Skills. Thank you");
+let utterance = new SpeechSynthesisUtterance("Hello, I am Pitam Chandra, I am a Professional Front-end Developer & WordPress Expert. Welcome my personal website,Thank you");
 setTimeout(() => {
   speechSynthesis.speak(utterance);
 }, 3000);
