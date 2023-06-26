@@ -39,9 +39,8 @@ $(".back_to_top").click(function(){
 var typed = new Typed('.banner_typing', {
   strings: [
     'Web Designer',
-    'UI/UX Designer',
-    'Font end Developer',
-    'Web Developer (PHP)',
+    'Front end Developer',
+    'Mern Stack Developer',
     'Wordpress Expert',
   ],
   typeSpeed: 60,

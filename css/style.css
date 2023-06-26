@@ -141,6 +141,20 @@ img {
     transform: rotatey(360deg);
 }
 
+.resume_btn {
+    padding: 10px 20px;
+    background-color: var(--brand);
+    border:1px solid var(--brand);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+    border-radius: 5px;
+  }
+.resume_btn:hover{
+    background-color: transparent;
+    color: var(--brand);
+}
 
 
 /* =====================
@@ -558,7 +572,7 @@ img {
     -webkit-box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
     -moz-box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 10px;
     margin-bottom: 20px;
     transition: all linear .4s;
 }
@@ -571,7 +585,11 @@ img {
 }
 
 #feature_part .item .common_h3 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+}
+#feature_part .skill-icon {
+    width: 44%;
+    margin-bottom: 15px;
 }
 
 #feature_part .item .feature_icon {
@@ -597,88 +615,6 @@ img {
     opacity: 1;
 }
 
-/* =====================
-    feature part css end
-======================= */
-
-#skill_part {
-    background: linear-gradient(var(--bg-black), var(--bg-dark));
-    padding-top: 80px;
-}
-
-#skill_part .item {
-    margin-bottom: 30px;
-}
-
-#skill_part .common_h3 {
-    font-size: 18px;
-}
-
-
-
-/* =====================
-    skill part css end
-======================= */
-
-#resume_part {
-    background: linear-gradient(var(--bg-dark), var(--bg-black));
-    padding-top: 80px;
-}
-
-#resume_part .item {
-    padding: 20px;
-    background: linear-gradient(320deg, var(--bg-dark), var(--bg-black));
-    box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
-    -webkit-box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
-    -moz-box-shadow: -3px -3px 9px 1px rgba(51, 51, 51, 0.75);
-    border-radius: 5px;
-    margin: 20px 0;
-    transition: all linear .4s;
-}
-
-#resume_part .item:hover {
-    background: linear-gradient(320deg, var(--bg-black), var(--bg-dark));
-    box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
-    -webkit-box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
-    -moz-box-shadow: 3px 3px 9px 1px rgba(51, 51, 51, 0.75);
-    transform: translatey(-10px);
-}
-
-#resume_part h4 {
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: var(--headingClr);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    display: inline-block;
-    position: relative;
-}
-
-#resume_part h4::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #000;
-}
-
-#resume_part .item h5 {
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: var(--brand);
-    margin-bottom: 20px;
-}
-
-#resume_part .item .border_row {
-    width: 100%;
-    height: 2px;
-    background: #000;
-    margin-bottom: 10px;
-}
 
 
 /* =====================
@@ -914,64 +850,7 @@ img {
     testimonial part css end
 ======================= */
 
-#leatest_part {
-    background: linear-gradient(var(--bg-black), var(--bg-dark));
-    padding-top: 80px;
-}
 
-#leatest_part .item {
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-#leatest_part .item img {
-    width: 100%;
-    transition: all linear .4s;
-}
-
-#leatest_part .item:hover img {
-    transform: scale(1.1);
-}
-
-#leatest_part .item .leatest_over {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #e548488a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all linear .4s;
-}
-
-#leatest_part .item:hover .leatest_over {
-    transform: scale(1);
-}
-
-#leatest_part .item .leatest_over a {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: var(--bg-dark);
-    border-radius: 50%;
-    box-shadow: 1px 1px 5px 2px #000;
-    color: var(--brand);
-    transition: all linear .4s;
-}
-
-#leatest_part .item .leatest_over a:hover {
-    color: #fff;
-    background: var(--brand);
-}
-
-/* =====================
-    leatest part css end
-======================= */
 
 #contact_part {
     background: linear-gradient(var(--bg-dark), var(--bg-black));

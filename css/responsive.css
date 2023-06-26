@@ -178,42 +178,6 @@
 
     /* ============ feature part end ============= */
 
-    /* ============ skill part start ============= */
-    #skill_part {
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    #skill_part .common_h3 {
-        font-size: 16px;
-        text-align: left;
-    }
-
-    /* ============ skill part end ============= */
-
-    /* ============ resume part start ============= */
-    #resume_part {
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    #resume_part h4 {
-        font-size: 16px;
-        margin-bottom: 0;
-        display: block;
-        text-align: left;
-    }
-
-    #resume_part h4::after {
-        width: 15%;
-    }
-
-    #resume_part .item h5 {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-
-    /* ============ resume part end ============= */
 
     /* ============ portfoio part start ============= */
     #portfolio_part {
@@ -272,21 +236,6 @@
     }
 
     /* ============ testimonial part end ============= */
-
-    /* ============ leatest part start ============= */
-    #leatest_part {
-        padding-top: 50px;
-        text-align: center;
-    }
-    #leatest_part .item {
-        margin-top: 20px;
-    }
-
-    #leatest_part .item .leatest_over {
-        transform: scale(1);
-    }
-
-    /* ============ leatest part end ============= */
 
     /* ============ contact part start ============= */
     #contact_part {
@@ -455,47 +404,7 @@
 
     /* ============ feature part end ============= */
 
-    /* ============ skill part start ============= */
-    #skill_part {
-        padding-top: 50px;
-        text-align: center;
-    }
 
-    #skill_part .common_h3 {
-        font-size: 16px;
-        text-align: left;
-    }
-
-    /* ============ skill part end ============= */
-
-    /* ============ resume part start ============= */
-    #resume_part {
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    #resume_part .item {
-        padding: 20px;
-        background: linear-gradient(320deg, var(--bg-dark), var(--bg-black));
-    }
-
-    #resume_part h4 {
-        font-size: 16px;
-        margin-bottom: 0;
-        display: block;
-        text-align: left;
-    }
-
-    #resume_part h4::after {
-        width: 15%;
-    }
-
-    #resume_part .item h5 {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-
-    /* ============ resume part end ============= */
 
     /* ============ portfoio part start ============= */
     #portfolio_part {
@@ -553,13 +462,7 @@
 
     /* ============ testimonial part end ============= */
 
-    /* ============ leatest part start ============= */
-    #leatest_part {
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    /* ============ leatest part end ============= */
+  
 
     /* ============ contact part start ============= */
     #contact_part {
@@ -712,25 +615,6 @@
 
     /* ======= feature part css end ======== */
 
-    /* ======= skill part css start ========= */
-    #skill_part .common_h3 {
-        font-size: 14px;
-    }
-
-    /* ======= skill part css end ======== */
-
-    /* ======= resume part css start ========= */
-    #resume_part h4 {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    #resume_part .item h5 {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-
-    /* ======= resume part css end ======== */
 
     /* ======= portfolio part css start ========= */
     #portfolio_part .item .port_overlay a {
