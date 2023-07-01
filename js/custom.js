@@ -103,9 +103,3 @@ $('.testi_slider').slick({
 
 //animation wow js
 new WOW().init();
-
-// play details 
-let utterance = new SpeechSynthesisUtterance("Hello, I am Pitam Chandra, I am a Professional Front-end Developer & WordPress Expert. Welcome my personal website. Thank you");
-setTimeout(() => {
-  speechSynthesis.speak(utterance);
-}, 3000);
