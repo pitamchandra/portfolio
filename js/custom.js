@@ -40,7 +40,7 @@ var typed = new Typed('.banner_typing', {
   strings: [
     'Web Designer',
     'Front end Developer',
-    'Mern Stack Developer',
+    'Junior Mern Developer',
     'Wordpress Expert',
   ],
   typeSpeed: 60,
@@ -51,14 +51,7 @@ var typed = new Typed('.banner_typing', {
 });
 
 //skills part barfiller
-$('#bar1').barfiller();
-$('#bar2').barfiller();
-$('#bar3').barfiller();
-$('#bar4').barfiller();
-$('#bar5').barfiller();
-$('#bar6').barfiller();
-$('#bar7').barfiller();
-$('#bar8').barfiller();
+
 
 //testimonial part 
 $('.testi_slider').slick({

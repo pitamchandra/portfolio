@@ -537,6 +537,10 @@ img {
     animation: image 4s infinite;
 }
 
+#banner_part .project_image{
+    width: 75%;
+}
+
 @keyframes image {
     0% {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
@@ -692,6 +696,10 @@ img {
 
 #portfolio_part .item .port_overlay .common_h3:hover {
     transform: scale(1.1);
+}
+
+#portfolio_part .card{
+    margin-top: 20px;
 }
 
 /* =====================
