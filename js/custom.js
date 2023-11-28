@@ -40,7 +40,7 @@ var typed = new Typed('.banner_typing', {
   strings: [
     'Web Designer',
     'Front end Developer',
-    'Junior Mern Developer',
+    'Junior Mern Stack Developer',
     'Wordpress Expert',
   ],
   typeSpeed: 60,
